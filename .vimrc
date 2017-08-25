@@ -12,11 +12,6 @@ Plugin 'gmarik/vundle'
 
 " We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'Valloric/YouCompleteMe'
-
-" To get plugins from Vim Scripts, you can reference the plugin
-" by name as it appears on the site
-Plugin 'Buffergator'
 
 Plugin 'minibufexpl.vim'
 Plugin 'taglist.vim'
