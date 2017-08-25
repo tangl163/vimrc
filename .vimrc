@@ -5,14 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
-" This is the Vundle package, which can be found on GitHub.
-" For GitHub repos, you specify plugins using the
-" 'user/repository' format
 Plugin 'gmarik/vundle'
-
-" We could also add repositories with a ".git" extension
 Plugin 'scrooloose/nerdtree.git'
-
 Plugin 'minibufexpl.vim'
 Plugin 'taglist.vim'
 Plugin 'majutsushi/tagbar'
