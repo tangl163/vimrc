@@ -7,9 +7,10 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree.git'
-Plugin 'minibufexpl.vim'
+Plugin 'fholgado/minibufexpl.vim'
 Plugin 'taglist.vim'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -19,7 +20,6 @@ filetype plugin indent on
 
 " Configue minibufexpl.vim
 let g:miniBufExplMaxSize = 2
-let g:miniBufExplStatusLineText = 0
 let g:miniBufExplCycleArround = 1
 
 set encoding=utf-8
@@ -42,7 +42,11 @@ set autowrite
 set hls
 set incsearch
 
+" Custome statusline
 set laststatus=2
+set statusline=%t
+"set statusline+=%!getcwd()
+set statusline=%<%F\ \ \ \ \CWD:\ %{getcwd()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " Move vertically by visual line
 nnoremap j gj
