@@ -64,7 +64,7 @@ set wildmenu
 set wildmode=list:longest
 
 " nerdtree
-nnoremap <silent> <F4> : NERDTreeToggle<CR>
+nnoremap <silent> <F4> :NERDTreeToggle<CR>
 
 " Tagbar
 nnoremap <silent> <F9> :TagbarToggle<CR>
