@@ -44,7 +44,7 @@ set incsearch
 
 " Custome statusline
 set laststatus=2
-set statusline=%<%F\ \ \ \ \CWD:\ %{getcwd()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%t\ \ \ \ \CWD:\ %{getcwd()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
 
 " Move vertically by visual line
 nnoremap j gj
