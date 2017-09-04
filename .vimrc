@@ -47,6 +47,11 @@ set incsearch
 set laststatus=2
 set statusline=%<%t\ \ \ \ \CWD:\ %{getcwd()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
 
+" function! MyStatusLine()
+"     let dirname = getcwd()
+"     return fnamemodify(l:dirname, ':p:h')
+" endfunction
+
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
