@@ -24,6 +24,8 @@ let g:miniBufExplMaxSize = 2
 let g:miniBufExplCycleArround = 1
 
 set encoding=utf-8
+
+colorscheme desert
 set number
 syntax on
 
