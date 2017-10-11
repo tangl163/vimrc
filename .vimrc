@@ -19,7 +19,7 @@ call vundle#end()
 " Now we can turn our filetype functionality back on
 filetype plugin indent on
 
-" Configue minibufexpl.vim
+" Configure minibufexpl.vim
 let g:miniBufExplMaxSize = 2
 let g:miniBufExplCycleArround = 1
 
@@ -45,7 +45,7 @@ set autowrite
 set hls
 set incsearch
 
-" Custome statusline
+" Custom statusline
 set laststatus=2
 set statusline=%<%t\ \ \ \ \CWD:\ %{getcwd()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
 
@@ -61,6 +61,10 @@ nnoremap k gk
 set so=10
 
 set autochdir
+
+" Configure spell check, and let the background color to black.
+set spell
+hi SpellBad cterm=underline ctermbg=16
 
 " Configure fold
 set foldenable
