@@ -62,6 +62,9 @@ set so=10
 
 set autochdir
 
+" Fix BackSpace problem
+set backspace=indent,eol,start
+
 " Configure spell check, and let the background color to black.
 " set spell
 " hi SpellBad cterm=underline ctermbg=16
