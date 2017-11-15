@@ -23,7 +23,10 @@ filetype plugin indent on
 let g:miniBufExplMaxSize = 2
 let g:miniBufExplCycleArround = 1
 
+" set encoding
 set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
 
 colorscheme desert
 set number
