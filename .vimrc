@@ -34,6 +34,7 @@ syntax on
 
 set autoindent
 set cindent
+set cinoptions+=:0
 
 set smartindent
 
