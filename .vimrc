@@ -13,10 +13,9 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 
-" All of your Plugins must be added before the following line
 call vundle#end()
 
-" Now we can turn our filetype functionality back on
+" Turn our filetype functionality back on
 filetype plugin indent on
 
 " Configure minibufexpl.vim
@@ -33,10 +32,9 @@ set number
 syntax on
 
 set autoindent
+set smartindent
 set cindent
 set cinoptions+=:0
-
-set smartindent
 
 set tabstop=4
 set shiftwidth=4
