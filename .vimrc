@@ -8,7 +8,6 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'fholgado/minibufexpl.vim'
-Plugin 'taglist.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
@@ -85,9 +84,6 @@ nnoremap <silent> <F4> :NERDTreeToggle<CR>
 
 " Tagbar
 nnoremap <silent> <F9> :TagbarToggle<CR>
-
-" Taglist
-nnoremap <silent> <F8> :Tlist<CR>
 
 " Short key to navigate windows
 noremap <C-J> <C-W>j
