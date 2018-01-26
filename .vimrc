@@ -21,6 +21,9 @@ filetype plugin indent on
 let g:miniBufExplMaxSize = 2
 let g:miniBufExplCycleArround = 1
 
+" Configure supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
 " set encoding
 set encoding=utf-8
 set termencoding=utf-8
@@ -66,7 +69,7 @@ set autochdir
 " Fix BackSpace problem
 set backspace=indent,eol,start
 
-" Configure spell check, and let the background color to black.
+" Configure spell check, and let the background color to be black.
 " set spell
 " hi SpellBad cterm=underline ctermbg=16
 
