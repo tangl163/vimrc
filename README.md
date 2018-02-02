@@ -9,8 +9,8 @@
     `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle`
 
 3. Install `plugin`
-    
-    Open `vim`, then type `:PluginInstall`.  
+
+    Open `vim`, then type `:PluginInstall`.
     Once all plugin being installed completely, your should relaunch your `vim`.
 
 4. Have fun!
