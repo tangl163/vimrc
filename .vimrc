@@ -36,8 +36,7 @@ syntax on
 set autoindent
 set smartindent
 set cindent
-set cinoptions+=:0
-set cinoptions+=(0
+set cinoptions+=:0,(0
 
 set tabstop=4
 set shiftwidth=4
