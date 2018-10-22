@@ -11,6 +11,7 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 
@@ -72,6 +73,8 @@ set backspace=indent,eol,start
 " Configure spell check, and let the background color to be black.
 " set spell
 " hi SpellBad cterm=underline ctermbg=16
+
+set noswapfile
 
 " Configure fold
 set foldenable
