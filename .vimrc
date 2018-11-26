@@ -12,6 +12,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'bronson/vim-trailing-whitespace'
 
 call vundle#end()
 
@@ -42,7 +43,7 @@ set cinoptions+=:0,(0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab 
+set expandtab
 
 set autowrite
 
