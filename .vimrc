@@ -14,8 +14,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'fatih/vim-go'
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
@@ -29,12 +30,16 @@ let g:miniBufExplCycleArround=1
 " Configure supertab
 let g:SuperTabDefaultCompletionType="<c-n>"
 
+" Setup vim-airline
+" let g:airline#extensions#tabline#enabled=1
+
 " set encoding
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 
-colorscheme desert
+colorscheme codedark
+
 set number
 syntax on
 
@@ -56,17 +61,17 @@ set incsearch
 
 " Custom statusline
 set laststatus=2
-set statusline=%<%t\ \ \ \ %{MyStatusLine()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
+" set statusline=%<%t\ \ \ \ %{MyStatusLine()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
 
-function! MyStatusLine()
-    return "DIR: " . expand('%:p:h')
-endfunction
+" function! MyStatusLine()
+"     return "DIR: " . expand('%:p:h')
+" endfunction
 
-augroup DimStatusLine
-  autocmd!
-  autocmd WinEnter * hi StatusLine ctermfg=251 guifg=#9e9e9e
-  autocmd WinLeave * hi StatusLineNC ctermfg=237 guifg=#e9e9e9
-augroup END
+" augroup DimStatusLine
+"   autocmd!
+"   autocmd WinEnter * hi StatusLine ctermfg=255 guifg=#9e9e9e
+"   autocmd WinLeave * hi StatusLineNC ctermfg=237 guifg=#e9e9e9
+" augroup END
 
 " Move vertically by visual line
 nnoremap j gj
@@ -105,4 +110,3 @@ noremap <C-J> <C-W>j
 noremap <C-K> <C-W>k
 noremap <C-H> <C-W>h
 noremap <C-L> <C-W>l
-
