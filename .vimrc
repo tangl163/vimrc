@@ -14,6 +14,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 
@@ -21,11 +23,11 @@ call vundle#end()
 filetype plugin indent on
 
 " Configure minibufexpl.vim
-let g:miniBufExplMaxSize = 2
-let g:miniBufExplCycleArround = 1
+let g:miniBufExplMaxSize=2
+let g:miniBufExplCycleArround=1
 
 " Configure supertab
-let g:SuperTabDefaultCompletionType = "<c-n>"
+let g:SuperTabDefaultCompletionType="<c-n>"
 
 " set encoding
 set encoding=utf-8
@@ -54,12 +56,17 @@ set incsearch
 
 " Custom statusline
 set laststatus=2
-set statusline=%<%t\ \ \ \ \CWD:\ %{getcwd()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
+set statusline=%<%t\ \ \ \ %{MyStatusLine()}\ %h%m%r%=%-24.(%b\ Ox%B\ \ %l,%c%V%)\ %P
 
-" function! MyStatusLine()
-"     let dirname = getcwd()
-"     return fnamemodify(l:dirname, ':p:h')
-" endfunction
+function! MyStatusLine()
+    return "DIR: " . expand('%:p:h')
+endfunction
+
+augroup DimStatusLine
+  autocmd!
+  autocmd WinEnter * hi StatusLine ctermfg=251 guifg=#9e9e9e
+  autocmd WinLeave * hi StatusLineNC ctermfg=237 guifg=#e9e9e9
+augroup END
 
 " Move vertically by visual line
 nnoremap j gj
