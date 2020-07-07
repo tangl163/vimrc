@@ -38,6 +38,8 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 
+set t_Co=256
+set t_ut=
 colorscheme codedark
 
 set number
