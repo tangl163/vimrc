@@ -2,15 +2,17 @@
 
 1. Config your `.vimrc`
 
-    Clone this repository to your machine. Then `cat vimrc/.vimrc > ~/.vimrc`
+    You'd better back your own `.vimrc` first by `mv ~/.virmc ~/.vimrm.back`.
+    Clone this repository. Then `cat vimrc/.vimrc > ~/.vimrc`
 
-2. Set up [Vundle](https://github.com/VundleVim/Vundle.vim)
+2. Set up [vim-plug](https://github.com/junegunn/vim-plug)
 
-    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle`
+    `curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
 3. Install `plugin`
 
-    Open `vim`, then type `:PluginInstall`.
+    Open `vim`, then type `:PlugInstall`.
     Once all plugin being installed completely, your should relaunch your `vim`.
 
 4. Have fun!
